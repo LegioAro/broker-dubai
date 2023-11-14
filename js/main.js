@@ -18,15 +18,15 @@ for (let elem of scrollSmoothLinck) {
 
 //header
 
-function headerScroll() {
-  const header = document.querySelector('.header');
-  if (window.pageYOffset > 0 && !header.classList.contains('header--scroll')) {
-    header.classList.add('header--scroll');
-  } else if (window.pageYOffset <= 0 && header.classList.contains('header--scroll')) {
-    header.classList.remove('header--scroll');
-  }
-}
-headerScroll();
+// function headerScroll() {
+//   const header = document.querySelector('.header');
+//   if (window.pageYOffset > 0 && !header.classList.contains('header--scroll')) {
+//     header.classList.add('header--scroll');
+//   } else if (window.pageYOffset <= 0 && header.classList.contains('header--scroll')) {
+//     header.classList.remove('header--scroll');
+//   }
+// }
+// headerScroll();
 
 window.addEventListener('scroll', function () {
   headerScroll();

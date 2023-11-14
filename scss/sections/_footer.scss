@@ -34,6 +34,10 @@
       max-width: 28px;
       display: flex;
     }
+
+    &--2 {
+      margin-right: 30px;
+    }
   }
 
   &__links-block {
@@ -72,6 +76,9 @@
 
 @media (max-width: 768px) {
   .footer {
+    &__logo {
+      display: none;
+    }
     &__links {
       margin-right: 50px;
     }
@@ -81,7 +88,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 375px) {
   .footer {
     &__info {
       flex-direction: column;
@@ -89,18 +96,7 @@
     &__links {
       margin-right: 0;
       margin-bottom: 30px;
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .footer {
-    &__links {
-      flex-direction: column;
-    }
-    &__links-block {
-      margin-top: 30px;
-      margin-left: 0;
+      justify-content: center;
     }
   }
 }
