@@ -43,6 +43,9 @@
   }
 
   &__info-text {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
     p {
       font-size: 16px;
       font-weight: 400;
