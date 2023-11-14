@@ -1,0 +1,145 @@
+.experts {
+  margin-bottom: 100px;
+  color: #171c27;
+  &__wrapper {
+    width: 100%;
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item-content {
+    margin-right: 20px;
+  }
+
+  &__item-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 90%; /* 28.8px */
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__item-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 145%; /* 23.2px */
+      letter-spacing: -0.8px;
+    }
+  }
+
+  &__item-link-img {
+    width: 100%;
+    max-width: 28px;
+    display: flex;
+    margin-right: 12px;
+  }
+
+  &__item-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 28px;
+  }
+
+  &__item-list-item {
+    font-size: 16px;
+    line-height: 145%; /* 23.2px */
+    letter-spacing: -0.8px;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-img {
+    width: 100%;
+    max-width: 213px;
+    height: 213px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1150px) {
+  .experts {
+    &__items {
+      grid-column-gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .experts {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    &__item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experts {
+    margin-bottom: 50px;
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 550px;
+      margin: 0 auto;
+    }
+    &__item {
+      margin-right: 0;
+    }
+    &__item-title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .experts {
+    &__item {
+      flex-direction: column-reverse;
+    }
+    &__item-title {
+      font-size: 24px;
+    }
+    &__item-img {
+      max-width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    &__item-content {
+      margin-right: 0px;
+    }
+  }
+}

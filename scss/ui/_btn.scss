@@ -1,0 +1,28 @@
+.btn {
+  border-radius: 20px 0px;
+
+  border: 0;
+  width: 100%;
+  padding: 19px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(92deg, #9142e0 0%, #320064 99.92%);
+
+  outline: none;
+
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 145%;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--nocolor {
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+  }
+}

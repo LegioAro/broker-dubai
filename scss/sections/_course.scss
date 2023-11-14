@@ -1,0 +1,319 @@
+.course {
+  background-color: #000;
+  background-image: url(../img/course/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 100px 0;
+  margin-bottom: 70px;
+  color: #fff;
+}
+
+.course-desc {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto 100px;
+
+  &__suptitle {
+    text-align: center;
+    font-size: 15px;
+    line-height: 100%; /* 15px */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 44px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-num {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 125%; /* 25px */
+    text-transform: uppercase;
+    margin-right: 25px;
+  }
+
+  &__item-content {
+  }
+
+  &__item-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 125%; /* 25px */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 165%; /* 23.1px */
+  }
+
+  &__result {
+    width: 100%;
+    max-width: 572px;
+    margin: 0 auto;
+    padding: 32px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 10px;
+      background-color: #9142e0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.5;
+      background-image: linear-gradient(
+        -90deg,
+        rgba(145, 66, 224, 0) 0%,
+        rgba(145, 66, 224, 0.5) 100%
+      );
+    }
+  }
+
+  &__result-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 165%; /* 41.25px */
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__result-text {
+    text-align: center;
+    font-size: 15px;
+    line-height: 165%; /* 24.75px */
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .course-desc {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 768px;
+      margin: 0 auto 40px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course {
+    padding: 50px 0;
+  }
+  .course-desc {
+    margin-bottom: 50px;
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 30px;
+      max-width: 400px;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.course-moduls {
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    border: 1px solid #fff;
+  }
+
+  .swiper-2 {
+    &__wrapper {
+      position: relative;
+
+      max-width: fit-content;
+      margin: 0 auto 40px;
+    }
+  }
+
+  .swiper-3 {
+    overflow: hidden;
+  }
+
+  .slider {
+    &__arrows {
+      position: absolute;
+      display: none;
+
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+
+      z-index: 2;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__arrow {
+      position: absolute;
+      width: 100%;
+      max-width: 30px;
+      display: flex;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &__arrow-prev {
+      left: 0;
+    }
+
+    &__arrow-next {
+      right: 0;
+    }
+  }
+
+  &__item {
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 145%; /* 20.3px */
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    &.swiper-slide-thumb-active {
+      background-image: linear-gradient(92deg, #9142e0 0%, #320064 99.92%);
+      border-left: 0;
+      border-top: 0;
+    }
+  }
+
+  &__descs {
+  }
+
+  &__desc {
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc-title {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 14px;
+  }
+
+  &__desc-items {
+  }
+
+  &__desc-item {
+    font-size: 24px;
+    letter-spacing: -1.2px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 14px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .course-moduls {
+    &__item {
+      padding: 18px 5px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .course-moduls {
+    &__desc-title {
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    &__desc-item {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .course-moduls {
+    &__items {
+      border: 0;
+    }
+    &__item {
+      border-right: 0;
+    }
+    .swiper-2 {
+      max-width: 500px;
+      overflow: hidden;
+      margin: 0 auto 40px;
+      &__wrapper {
+        padding: 0 56px;
+      }
+    }
+    .slider {
+      &__arrows {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course-moduls {
+    &__desc-title {
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    &__desc-item {
+      font-size: 18px;
+    }
+  }
+}

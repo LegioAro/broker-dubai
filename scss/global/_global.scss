@@ -1,0 +1,41 @@
+body {
+  background-color: #ebebeb;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  position: relative;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1495px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--big {
+    max-width: 1790px;
+  }
+}
+
+.block {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0 65px;
+}
+
+.--gradient {
+  background-image: linear-gradient(90deg, #9142e0 0%, #320064 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.--gradient-2 {
+  background-image: linear-gradient(180deg, #9142e0 0%, #320064 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

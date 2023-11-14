@@ -1,0 +1,29 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//ui
+@import './ui/btn';
+
+//moduls
+@import './moduls/title';
+
+//sections
+@import './sections/header';
+
+@import './sections/cover';
+@import './sections/whom';
+@import './sections/reasons';
+@import './sections/description';
+@import './sections/course';
+@import './sections/support';
+@import './sections/who';
+@import './sections/experts';
+@import './sections/rates';
+@import './sections/videos';
+@import './sections/images';
+@import './sections/questions';
+
+@import './sections/footer';
