@@ -10,7 +10,7 @@ for (let elem of scrollSmoothLinck) {
     let top = document.getElementById(blockID).getBoundingClientRect().top;
 
     document.querySelector('html,body').scrollTo({
-      top: top + window.pageYOffset - 100,
+      top: top + window.pageYOffset - 50,
       behavior: 'smooth',
     });
   });
