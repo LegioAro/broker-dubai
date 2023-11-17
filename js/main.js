@@ -16,18 +16,6 @@ for (let elem of scrollSmoothLinck) {
   });
 }
 
-//header
-
-// function headerScroll() {
-//   const header = document.querySelector('.header');
-//   if (window.pageYOffset > 0 && !header.classList.contains('header--scroll')) {
-//     header.classList.add('header--scroll');
-//   } else if (window.pageYOffset <= 0 && header.classList.contains('header--scroll')) {
-//     header.classList.remove('header--scroll');
-//   }
-// }
-// headerScroll();
-
 window.addEventListener('scroll', function () {
   headerScroll();
 });
@@ -50,7 +38,6 @@ handlAcardion();
 //sliders
 
 const swiper = new Swiper('.swiper', {
-  // Default parameters
   centeredSlides: true,
   spaceBetween: 0,
   loop: true,
@@ -61,7 +48,6 @@ const swiper = new Swiper('.swiper', {
     type: 'bullets',
     clickable: true,
   },
-  // Responsive breakpoints
   breakpoints: {
     320: {
       slidesPerView: 2,
