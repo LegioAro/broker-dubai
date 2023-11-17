@@ -55,6 +55,16 @@
           fill: #9142e0;
         }
       }
+
+      &.footer__link--underline {
+        text-decoration-color: #9142e0;
+      }
+    }
+
+    &--underline {
+      text-decoration: underline;
+      text-decoration-color: #fff;
+      transition: 0.3s;
     }
 
     &--2 {
