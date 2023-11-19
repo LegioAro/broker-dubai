@@ -1,0 +1,151 @@
+.timer {
+  text-align: center;
+  display: flex;
+  &__item {
+    padding-right: 20px;
+    border-right: 1px solid #e5e6e9;
+    margin-right: 20px;
+
+    &:last-child {
+      border-right: 0;
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__number {
+    color: #e5e6e9;
+    font-size: 20px;
+    line-height: 165%; /* 33px */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &__label {
+    color: #e5e6e9;
+    font-size: 20px;
+    line-height: 165%; /* 33px */
+    letter-spacing: 4px;
+  }
+
+  &--rates {
+  }
+}
+
+@media (max-width: 1600px) {
+  .timer {
+    &--rates {
+      .timer__item {
+        padding-right: 10px;
+        margin-right: 10px;
+
+        &:last-child {
+          padding-right: 0;
+          margin-right: 0;
+        }
+      }
+      .timer__number,
+      .timer__label {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .timer {
+    &--rates {
+      .timer__item {
+        padding-right: 5px;
+        margin-right: 5px;
+      }
+      .timer__label {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .timer {
+    &--rates {
+      .timer__label {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .timer {
+    &--rates {
+      .timer__item {
+        padding-right: 20px;
+        margin-right: 20px;
+      }
+      .timer__number,
+      .timer__label {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .timer {
+    &--rates {
+      .timer__item {
+        padding-right: 10px;
+        margin-right: 10px;
+      }
+      .timer__label {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .timer {
+    &__item {
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+    &__number,
+    &__label {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .timer {
+    &__item {
+      padding-right: 5px;
+      margin-right: 5px;
+    }
+    &__number,
+    &__label {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .timer {
+    &--rates {
+      .timer__item {
+        padding-right: 10px;
+        margin-right: 10px;
+      }
+      .timer__label {
+        font-size: 8px;
+      }
+    }
+  }
+}

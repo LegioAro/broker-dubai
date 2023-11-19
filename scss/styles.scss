@@ -9,10 +9,12 @@
 
 //moduls
 @import './moduls/title';
+@import './moduls/timer';
 
 //sections
 // @import './sections/header';
 
+@import './sections/black-friday';
 @import './sections/cover';
 @import './sections/whom';
 @import './sections/reasons';
@@ -28,22 +30,3 @@
 @import './sections/documentation';
 
 @import './sections/footer';
-
-.new {
-  border-radius: 10px;
-  background-color: #4547f4;
-  padding: 3px 18px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.other {
-  max-width: 320px;
-  margin: 0 auto;
-}

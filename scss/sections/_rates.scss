@@ -25,7 +25,7 @@
     border: 2px solid #fff;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(14.5px);
-    padding: 40px 47px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
 
@@ -121,7 +121,7 @@
   }
 
   &__item-prices {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   &__item-price {
@@ -164,7 +164,6 @@
   }
 
   &__item-btn {
-    max-width: 318px;
   }
 
   &__item-message {
@@ -186,6 +185,56 @@
     text-transform: uppercase;
 
     margin: -84px -10px 21px auto;
+  }
+
+  &__item-alert {
+    border-radius: 20px;
+    background-color: #ff0950;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-alert-percent {
+    padding: 14px 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #ff0950;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 24px;
+  }
+
+  &__item-alert-text {
+  }
+
+  &__item-alert-title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &__item-alert-num {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 6.4px;
+    text-transform: uppercase;
+  }
+
+  &__item-timer {
+    margin-bottom: 40px;
+  }
+
+  &__item-timer-title {
+    color: #ff0950;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 165%; /* 39.6px */
+    text-transform: uppercase;
+    margin-bottom: 16px;
   }
 }
 
@@ -213,6 +262,17 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .rates {
+    &__item-timer-title {
+      font-size: 20px;
+    }
+    &__item-alert-title {
+      font-size: 16px;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .rates {
     &__item-title {
@@ -229,6 +289,9 @@
     }
     &__item-price-text {
       font-size: 28px;
+    }
+    &__item-timer-title {
+      font-size: 18px;
     }
   }
 }
